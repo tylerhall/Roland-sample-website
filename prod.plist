@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>base_url</key>
+	<string>https://tyler.io</string>
+	<key>posts_per_page</key>
+	<integer>10</integer>
+	<key>show_post_excerpts</key>
+	<true/>
+	<key>post_url_prefix</key>
+	<string></string>
+	<key>archive_url_prefix</key>
+	<string>page</string>
+	<key>category_url_prefix</key>
+	<string>category</string>
+	<key>Context</key>
+	<dict>
+		<key>cdn</key>
+		<string>https://cdn.tyler.io</string>
+		<key>title</key>
+		<string>tyler.io</string>
+		<key>post_title_suffix</key>
+		<string> &amp;#8211; tyler.io</string>
+		<key>default_post_author</key>
+		<string>Tyler Hall</string>
+		<key>rss_title</key>
+		<string>tyler.io</string>
+		<key>rss_description</key>
+		<string>Posts from tyler.io</string>
+		<key>rss_language_code</key>
+		<string>en-US</string>
+	</dict>
+</dict>
+</plist>
