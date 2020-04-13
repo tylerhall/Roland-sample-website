@@ -14,6 +14,6 @@ The [TwentyTwenty Theme](https://wordpress.org/themes/twentytwenty/) is licensed
 
 My additions and modifications to the theme are released under the same license.
 
-The sample [blog posts](https://github.com/tylerhall/Roland/blob/master/_posts), [static pages](https://github.com/tylerhall/Roland/blob/master/_pages), and [image assets](https://github.com/tylerhall/Roland/blob/master/_public) included in this demo project are _not_ licensed for reuse. Feel free to use them to test out Roland and see how things work. But the contents of those posts and pages are not to be re-posted on another public website.
+The sample [blog posts](https://github.com/tylerhall/Roland-sample-website/tree/master/_posts), [static pages](https://github.com/tylerhall/Roland-sample-website/tree/master/_pages), and [image assets](https://github.com/tylerhall/Roland-sample-website/tree/master/_public) included in this demo project are _not_ licensed for reuse. Feel free to use them to test out Roland and see how things work. But the contents of those posts and pages are not to be re-posted on another public website.
 
 [IANAL](https://en.wikipedia.org/wiki/IANAL), so please interpret my license wishes appropriately. Feel free to [reach out](https://tyler.io/about/) if I've said something legally dubious or stupid.
