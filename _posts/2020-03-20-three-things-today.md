@@ -2,6 +2,9 @@ title: Three Things Today
 date: 2020-03-20 01:38:25
 slug: three-things-today
 categories: Productivity,OmniFocus,Indie Business,macOS Development,Click On Tyler
+og_description: Three Things is a purposely simple task management app that I wrote myself for my own particular way of scheduling my days.
+og_image: /wp-content/uploads/2020/03/three-things-ss1.png
+og_image_alt: The calendar window in Three Things for macOS.
 ---
 Every task management app has a feature that will let you postpone, delay, or snooze a task. You can tell them to push a todo item out by a day or a week, etc. But I like to think Three Things is smarter than that. It's designed to be flexible and forgiving - pragmatic and realistic. When you defer a task, it won’t accidentally reschedule it for a day that’s already overflowing with commitments. It literally will not allow you to schedule more than three tasks per day.
 

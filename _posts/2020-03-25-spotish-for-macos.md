@@ -1,7 +1,11 @@
 title: Spotish for macOS
 date: 2020-03-25 01:19:33
+updated: 2020-04-18 01:19:33
 slug: spotish-for-macos
 categories: Drafts.app,macOS Development,Click On Tyler
+og_description: Spotish is a dead-simple Mac menu bar app for Spotify – there are many like it, but this one is mine. Here’s why.
+og_image: /wp-content/uploads/2020/03/spotish-artwork.jpeg
+og_image_alt: Spotish running in the macOS menu bar and showing the artist, album, song title, and album artwork.
 ---
 Spotish is a dead-simple Mac menu bar app for Spotify – there are many like it, but this one is mine. Here’s why.
 ---

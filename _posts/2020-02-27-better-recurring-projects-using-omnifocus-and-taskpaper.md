@@ -2,6 +2,9 @@ title: Better Recurring Projects Using OmniFocus and TaskPaper
 date: 2020-02-27 15:08:17
 slug: better-recurring-projects-using-omnifocus-and-taskpaper
 categories: Productivity,OmniFocus,Keyboard Maestro
+og_description: Checklists can be an amazing tool to have at your disposal. And learning to use them was a huge part in my own journey towards letting go of all the crap in my head.
+og_image: /wp-content/uploads/2020/02/keyboard-maestro-taskpaper-macro.png
+og_image_alt: Screenshot of my KeyboardMaestro macro to quickly create new TaskPaper lists from a template.
 ---
 The point of this story is to say that checklists – particularly ones that recur and involve multiple, detailed steps – can be an amazing tool to have at your disposal. And learning to use them was a huge part in my own journey towards letting go of all the crap in my head.
 ---

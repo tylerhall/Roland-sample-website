@@ -2,6 +2,7 @@ title: #IndieSupportWeeks
 date: 2020-04-01 01:14:13
 slug: indiesupportweeks
 categories: Favorite Things
+og_description: Stick around and read along as I go into excruciating detail about my favorite software and services that I can’t live without.
 ---
 With all that’s going on in the world, it may not surprise folks to learn that small developers are starting to feel the economic crunch along with everyone else. I hope you’ll stick around and read along as I go into excruciating detail about my favorite software and services that I can’t live without.
 ---

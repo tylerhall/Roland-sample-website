@@ -3,12 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-	<link rel="preconnect" href="https://cdn.tyler.io/" crossorigin>
-	<link rel="dns-prefetch" href="https://cdn.tyler.io">
+	<link rel="preconnect" href="<?PHP echo $site_cdn; ?>" crossorigin>
+	<link rel="dns-prefetch" href="<?PHP echo $site_cdn; ?>">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://cdn.clickontyler.com/" crossorigin>
-	<link rel="dns-prefetch" href="https://cdn.clickontyler.com">
 
 <meta http-equiv="Content-Security-Policy" content="
 default-src * data: blob:;
@@ -18,35 +16,52 @@ script-src * 'unsafe-inline' 'unsafe-eval';">
 	<link rel='stylesheet' href='<?PHP echo $site_cdn; ?>/css/style.css?ver=<?PHP echo $meta_microtime; ?>' media='all'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap">
 
-	<?PHP if(($meta_layout == 'post') && (strpos($post_content, '[tylervideo') !== false)) : ?>
-	<script src="https://vjs.zencdn.net/7.7.5/video.min.js"></script>
-	<link rel="stylesheet" href="https://vjs.zencdn.net/7.7.5/video-js.min.css">
-	<link rel="stylesheet" href="<?PHP echo $site_cdn; ?>/css/iplayer.min.css?ver=<?PHP echo $meta_microtime; ?>">
-	<?PHP endif; ?>
-
-	<link rel='stylesheet' href='<?PHP echo $site_cdn; ?>/css/print.css?ver=<?PHP echo $meta_microtime; ?>' media='print'>
-	
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 			})(window,document,'script','dataLayer','GTM-KJ9MSKH');</script>
+
+<script type='text/javascript'>
+//some default pre init
+var Countly = Countly || {};
+Countly.q = Countly.q || [];
+
+//provide countly initialization parameters
+Countly.app_key = '39ada380b58c519f09f62b38484e9600488165e5';
+Countly.url = 'https://x2.tylerhall.dev';
+
+Countly.q.push(['track_sessions']);
+Countly.q.push(['track_pageview']);
+Countly.q.push(['track_clicks']);
+Countly.q.push(['track_links']);
+
+//load countly script asynchronously
+(function() {
+   var cly = document.createElement('script'); cly.type = 'text/javascript';
+   cly.async = true;
+   //enter url of script here
+   cly.src = 'https://x2.tylerhall.dev/sdk/web/countly.min.js';
+   cly.onload = function(){Countly.init()};
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+})();
+</script>			
 	
-	<?PHP if($meta_layout == 'post') : ?>
+<?PHP if($meta_layout == 'post') : ?>
 	<title><?PHP echo $post_title; ?> &#8211; tyler.io</title>
-	<?PHP elseif($meta_layout == 'page') : ?>
+<?PHP elseif($meta_layout == 'page') : ?>
 	<title><?PHP echo $page_title; ?> &#8211; tyler.io</title>
-	<?PHP elseif(($meta_layout == 'home') && ($archive_page_number == 1)) : ?>
+<?PHP elseif(($meta_layout == 'home') && ($archive_page_number == 1)) : ?>
 	<title>tyler.io</title>
-	<?PHP elseif(($meta_layout == 'home') && ($archive_page_number > 1)) : ?>
+<?PHP elseif(($meta_layout == 'home') && ($archive_page_number > 1)) : ?>
 	<title>tyler.io - Page <?PHP echo $archive_page_number; ?></title>
-	<?PHP elseif($meta_layout == 'category') : ?>
+<?PHP elseif($meta_layout == 'category') : ?>
 	<title>Posts about "<?PHP echo $category_name; ?>" &#8211; tyler.io</title>
-	<?PHP elseif($meta_layout == 'date') : ?>
+<?PHP elseif($meta_layout == 'date') : ?>
 	<title>Posts from <?PHP echo dater($date_start, 'F Y'); ?> &#8211; tyler.io</title>
-	<?PHP else : ?>
+<?PHP else : ?>
 	<title>tyler.io</title>
-	<?PHP endif; ?>
+<?PHP endif; ?>
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?PHP echo $site_cdn; ?>/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?PHP echo $site_cdn; ?>/apple-touch-icon-114x114.png" />
@@ -74,7 +89,18 @@ script-src * 'unsafe-inline' 'unsafe-eval';">
 	<link rel="me" href="https://www.linkedin.com/in/tylerhall">
 	<link rel="me" href="mailto:rth@tyler.io">
 
-	<link rel="alternate" type="application/rss+xml" title="tyler.io &raquo; All Posts" href="https://tyler.io/feed/">
+	<link rel="alternate" type="application/rss+xml" title="tyler.io &raquo; All Posts" href="<?PHP echo $site_base_url; ?>feed/">
+	<link rel="alternate" type="application/json" title="tyler.io &raquo; All Posts" href="<?PHP echo $site_base_url; ?>feed.json" />
+
+    <meta property="og:site_name" content="tyler.io"/>
+	<meta property="og:locale" content="en_US" />
+<?PHP if($meta_layout == 'post') : ?>
+<?PHP include('inc/post-og-head.php'); ?>
+<?PHP endif;?>
+<?PHP if($meta_layout == 'page') : ?>
+<?PHP include('inc/page-og-head.php'); ?>
+<?PHP endif;?>
+	
 	<!-- <?PHP echo $meta_microtime; ?> -->
 </head>
 <?PHP if($meta_layout == 'post') : ?>
@@ -92,6 +118,7 @@ script-src * 'unsafe-inline' 'unsafe-eval';">
 <?PHP if($meta_layout == 'date') : ?>
 <body class="home blog footer-top-visible">
 <?PHP endif; ?>
+<noscript><img src='https://x2.tylerhall.dev/pixel.png?app_key=39ada380b58c519f09f62b38484e9600488165e5&begin_session=1'/></noscript>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ9MSKH"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<header id="site-header" class="header-footer-group" role="banner" style="position:relative;">

@@ -8,6 +8,6 @@
 					echo '<p>' . substr($stripped, 0, $split_pos) . '...</p>';
 				?>
 				<?PHP endif; ?>
-				<p><a href="<?PHP echo $post_permalink; ?>">Read More &raquo;</a></p>
+				<p class="has-text-align-center"><a href="<?PHP echo $post_permalink; ?>">Read More &raquo;</a></p>
 			</div>
 		</div>

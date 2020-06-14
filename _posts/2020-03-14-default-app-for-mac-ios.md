@@ -2,6 +2,9 @@ title: DefaultApp
 date: 2020-03-14 10:41:09
 slug: default-app-for-mac-ios
 categories: Xcode,Indie Business,Open Source,iOS Development,macOS Development
+og_description: DefaultApp is an open source starting point – a template - that I use quickly spin up new macOS projects.
+og_image: /wp-content/uploads/2020/03/defaultapp-prefs-about.png
+og_image_alt: Screenshot of DefaultApp
 ---
 DefaultApp is an open source starting point – a template. I maintained it in Objective-C for over a decade before finally porting it to Swift in 2018. Anytime I start a new app – big or small, whether or not it’s something I plan on releasing publicly or if it’s just a small prototype or utility app I’m building for myself – I start with this project.
 

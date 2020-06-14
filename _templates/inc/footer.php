@@ -19,10 +19,11 @@
 					<div class="widget widget_pages">
 						<div class="widget-content">
 							<ul>
-								<li class="page_item"><a href="<?PHP echo $site_base_url; ?>feed/"><img src="<?PHP echo $site_cdn; ?>/images/rss-2.gif" width="60px" height="20px"></a></li>
 								<li class="page_item">
 									<a href="https://twitter.com/tylerhall/"><img src="<?PHP echo $site_cdn; ?>/images/garbage-company-2.png" width="24px" height="20px" alt="@tylerhall"></a><a href="https://twitter.com/tylerhall/" class="mini">@tylerhall</a>
 								</li>
+								<li class="page_item"><a href="<?PHP echo $site_base_url; ?>feed.json"><img src="<?PHP echo $site_cdn; ?>/images/json-feed.png" width="20px" height="20px"> JSON Feed</a></li>
+								<li class="page_item"><a href="<?PHP echo $site_base_url; ?>feed/"><img src="<?PHP echo $site_cdn; ?>/images/rss-2.gif" width="60px" height="20px"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -73,13 +74,13 @@
 										<small>Build and test multiple websites on your Mac.</small>
 									</p>
 									<p>
-										<a href="https://clickontyler.com/hostbuddy/"><img src="<?PHP echo $site_cdn; ?>/images/hostbuddy-index-3.jpg" alt="VirtualHostX Pro logo" /></a>
+										<a href="https://clickontyler.com/hostbuddy/"><img src="<?PHP echo $site_cdn; ?>/images/hostbuddy-index-3.jpg" alt="Hostbuddy logo" /></a>
 										<br>
 										<a href="https://clickontyler.com/hostbuddy/">Hostbuddy</a><br>
 										<small>Tame your /etc/hosts file.</small>
 									</p>
 									<p>
-										<a href="https://clickontyler.com/hobo/"><img src="<?PHP echo $site_cdn; ?>/images/hobo-index-3.jpg" alt="VirtualHostX Pro logo" /></a>
+										<a href="https://clickontyler.com/hobo/"><img src="<?PHP echo $site_cdn; ?>/images/hobo-index-3.jpg" alt="Hobo logo" /></a>
 										<br>
 										<a href="https://clickontyler.com/hobo/">Hobo</a><br>
 										<small>The premiere Vagrant app for Mac.</small>
@@ -91,10 +92,16 @@
 										<small>Forecast Your Personal Finances.</small>
 									</p>
 									<p>
-										<a href="https://commandqapp.com"><img src="<?PHP echo $site_cdn; ?>/images/cq2-index-3.jpg" alt="VirtualHostX Pro logo" /></a>
+										<a href="https://commandqapp.com"><img src="<?PHP echo $site_cdn; ?>/images/cq2-index-3.jpg" alt="CommandQ logo" /></a>
 										<br>
 										<a href="https://commandqapp.com">CommandQ</a><br>
 										<small>Never accidentally quit an app or mistakenly close a window again.</small>
+									</p>
+									<p>
+										<a href="https://clickontyler.com/ears/"><img src="<?PHP echo $site_cdn; ?>/images/ears-index.jpg" alt="Ears logo" /></a>
+										<br>
+										<a href="https://clickontyler.com/ears/">Ears</a><br>
+										<small>The instant audio switcher for macOS.</small>
 									</p>
 								</div>
 							</div>

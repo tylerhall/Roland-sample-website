@@ -1,5 +1,7 @@
 title: About
 path: about/index.html
+og_title: About Tyler Hall
+og_description: Tyler Hall is a Mac, iOS, and (former) web developer from Nashville, TN.
 ---
 [Tyler Hall](https://twitter.com/tylerhall) is a Mac, iOS, and (former) web developer from Nashville, TN.
 

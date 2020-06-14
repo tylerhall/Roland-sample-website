@@ -2,6 +2,9 @@ title: A Quick Shell Script to Keep a LAN File Server Mounted All the Time
 date: 2020-03-25 11:02:26
 slug: a-quick-shell-script-to-keep-a-lan-file-server-mounted-all-the-time
 categories: macOS,Nerdery,Bash / Shell Script
+og_description: Here's a small shell script and launchd job for macOS that keeps a shared network drive mounted even after the network drops or disconnects.
+og_image: /wp-content/uploads/2020/03/samba-eject-mount.gif
+og_image_alt: Image of a shared network drive mounted in the Finder.
 ---
 Now that we're all stuck at home practicing social distancing, my children's mood depends on their favorite TV shows and movies always being available during their iPad free time. And my sanity depends on not hearing the awful clicking noise of the external drive our video library is stored on while I'm working at my desk. Moving it to a networked file server running off a Raspberry Pi was simple enough and solved the problem. But after trying a few 3rd party apps to keep the network share always mounted, here's the simple shell script I wrote instead.
 ---

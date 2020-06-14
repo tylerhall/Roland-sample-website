@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>base_url</key>
-	<string>https://tyler.io</string>
+	<string>http://tyler.vhx.cloud:8080</string>
 	<key>posts_per_page</key>
 	<integer>10</integer>
 	<key>show_post_excerpts</key>
@@ -14,10 +14,16 @@
 	<string>page</string>
 	<key>category_url_prefix</key>
 	<string>category</string>
+	<key>related_posts</key>
+	<true/>
+	<key>php</key>
+	<string>/usr/bin/php</string>
+	<key>pygmentize</key>
+	<string>/usr/local/bin/pygmentize</string>
 	<key>Context</key>
 	<dict>
 		<key>cdn</key>
-		<string>https://cdn.tyler.io</string>
+		<string>http://tyler.vhx.cloud:8080</string>
 		<key>title</key>
 		<string>tyler.io</string>
 		<key>post_title_suffix</key>

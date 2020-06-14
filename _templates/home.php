@@ -24,20 +24,22 @@
 			</div>
 		</header>
 		<?PHP include('inc/post-excerpt.php'); ?>
-		<div class="section-inner">
+		<div class="section-inner thin">
 			<br>
 			<div class="entry-categories">
 				<span class="screen-reader-text">Categories</span>
 				<div class="entry-categories-inner">
 					<?PHP foreach($post_categories as $cat_name) : ?>
-					<?PHP $c = $site_categoriesByName[$cat_name]; ?>
+					<?PHP $c = $site_categories_by_name[$cat_name]; ?>
 					<a href="<?PHP echo $c['permalink']; ?>" rel="category tag"><?PHP echo $c['name']; ?></a>
 					<?PHP endforeach; ?>
 				</div>
 			</div>
 		</div>
 	</article>
-	<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />
+	<div class="section-inner thin">
+		<hr class="post-separator styled-separator is-style-wide" aria-hidden="true" />
+	</div>
 <?PHP endforeach; ?>
 	<div class="pagination-wrapper section-inner">
 		<nav class="navigation pagination" role="navigation" aria-label="Posts">

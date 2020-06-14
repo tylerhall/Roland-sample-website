@@ -2,6 +2,9 @@ title: The Stack View is a Liar
 date: 2020-03-16 23:36:27
 slug: the-stack-view-is-a-liar
 categories: Xcode,Programming,macOS Development
+og_description: Today I lost about four hours debugging what I thought was a bizarre bug due to my own ignorance. Here's the story.
+og_image: /wp-content/uploads/2020/03/threethings-view-debug-scaled.jpeg
+og_image_alt: Xcode visual debugger showing the bug and my out of control view hierarchy.
 ---
 ...Firing up Xcode’s wonderful view debugger, however, completely blew my mind and shattered any remaining self-confidence I had as an app developer. And then nearly an hour later I’m really questioning everything I thought I knew about ones and zeroes until a google search leads me to this page. And, sure enough, my bug is spelled out right there.
 ---

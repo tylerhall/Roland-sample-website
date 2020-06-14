@@ -2,6 +2,7 @@ title: So, uh, I think Catalina 10.15.4 Broke SSH?
 date: 2020-03-31 00:12:33
 slug: so-uh-i-think-catalina-10154-broke-ssh
 categories: macOS,Server
+og_description: SSH'ing into a server with a high port number via its domain name is broken in macOS Catalina 10.15.4.
 ---
 I was completely at my wit’s end and feeling like I had lost my mind until about a half hour ago. And I don’t know what difference connecting via a hostname versus an IP address would make when specifically using a non-standard port above a certain threshold. I’m not even going to go into it. I don’t want to end up on Hacker News again bitching about Catalina. I just hope I’ve stuffed this post with enough keywords so that anyone else searching on Google might come across the answer.
 ---

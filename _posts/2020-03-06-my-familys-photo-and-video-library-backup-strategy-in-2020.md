@@ -2,6 +2,7 @@ title: My Family’s Photo and Video Library Backup Strategy in 2020 - Plus a Fu
 date: 2020-03-06 01:25:39
 slug: my-familys-photo-and-video-library-backup-strategy-in-2020
 categories: Backups,Photography,Apple
+og_description: My life, to a certain degree, is documented through the literal data I've created over the years. Here's how I backup the most important parts of it - my family photos.
 ---
 Two of the topics I've written about the most on this blog are backing up your data and photography - not professional, artsy photography, but more in the sense of your family's photo and home video library. I'm a huge nerd for these topics. Part of the reason for that is my own obsessive personality traits, but also because of my affinity for nostalgia and history. My life, to a certain degree, is documented through the literal data I've created over the years. And the lives of the people I love are likewise documented through the digital archives I keep. So when those two topics intersect, holy cow do I ever proudly fly my geek flag.
 ---

@@ -3,9 +3,16 @@
 
 	function render($text)
 	{
+		$text = render_vars($text);
+		$text = render_custom_tags($text);
+		return $text;
+	}
+	
+	function render_vars($text)
+	{
 		$text = str_replace('%7B%7B', '{{', $text);
 		$text = str_replace('%7D%7D', '}}', $text);
-		$rendered = preg_replace_callback("/{{([a-zA-Z0-9_-]+)}}/", function ($matches) {
+		$out = preg_replace_callback("/{{([a-zA-Z0-9_-]+)}}/", function ($matches) {
 			$varvar = $matches[1];
 			if(isset($GLOBALS[$varvar])) {
 				return $GLOBALS[$varvar];
@@ -13,10 +20,14 @@
 				return $varvar;
 			}
 		}, $text);
-		
-		
+
+		return $out;
+	}
+	
+	function render_custom_tags($text)
+	{
 		// <tylervideo  url="amazon-photos-upload.MP4" img="amazon-photos-upload.jpg">		
-		$rendered = preg_replace_callback('/<tylervideo .*?url="(.*?)".*?img="(.*?)".*?>/', function ($matches) {
+		$out = preg_replace_callback('/<tylervideo .*?url="(.*?)".*?img="(.*?)".*?>/', function ($matches) {
 			if(strpos($matches[1], 'https://') === false) {
 				$src = 'https://video.tyler.io/1080p/' . $matches[1];
 			} else {
@@ -35,11 +46,11 @@
 			</video>";
 
 			return $div;
-		}, $rendered);
+		}, $text);
 
-		return $rendered;
+		return $out;
 	}
-	
+
 	function compute_pages($total, $current)
 	{
 		$numbers = range(max(1, $current - 2), min($total, $current + 2));

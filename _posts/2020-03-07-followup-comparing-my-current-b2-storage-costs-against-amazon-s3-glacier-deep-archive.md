@@ -2,6 +2,7 @@ title: Followup: Comparing my Current B2 Storage Costs against Amazon S3 Glacier
 date: 2020-03-07 11:29:58
 slug: followup-comparing-my-current-b2-storage-costs-against-amazon-s3-glacier-deep-archive
 categories: Backups,Amazon Web Services,Photography
+og_description: This is a quick followup to my post from this week about backing up my family’s photos and home videos with Google Photos and B2.
 ---
 This is a quick followup to my post from this week about backing up my family’s photos and home videos with Google Photos and B2. A reader asked why I use B2 over Amazon's cheaper S3 Glacier alternative. I started to reply directly, but then like everything I write, it kept growing. And then I thought my answer might be interesting to others as well. So, here you go...
 ---

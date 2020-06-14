@@ -20,7 +20,10 @@
 			</div>
 		</header>
 		<?PHP include('inc/post-excerpt.php'); ?>
+		<br>
 		<?PHP include('inc/post-categories-list.php'); ?>
 	</article>
-	<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />
+	<div class="section-inner thin">
+		<hr class="post-separator styled-separator is-style-wide" aria-hidden="true" />
+	</div>
 <?PHP endforeach; ?>
